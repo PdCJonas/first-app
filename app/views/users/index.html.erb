@@ -2,9 +2,9 @@
 
 <h1>Users</h1>
 
-<table>
+<table class="w3-table-all">
   <thead>
-    <tr>
+    <tr class="w3-green">
       <th>Name</th>
       <th>Email</th>
       <th colspan="3"></th>
@@ -16,7 +16,7 @@
       <tr>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
-        <td><%= link_to 'Show', user, class:"w3-button w3-blue" %></td>
+        <td><%= link_to 'Show', user, class:"w3-button w3-yellow" %></td>
         <td><%= link_to 'Edit', edit_user_path(user), class:"w3-button w3-orange" %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class:"w3-button w3-red" %></td>
       </tr>
@@ -27,3 +27,5 @@
 <br>
 
 <%= link_to 'New User', new_user_path, class:"w3-button w3-yellow-green" %>
+<br>
+<p></p>
